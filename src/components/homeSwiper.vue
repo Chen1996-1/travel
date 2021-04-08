@@ -30,7 +30,7 @@ export default {
         },
         {
           id: '003',
-          imgUrl: 'https://www.bing.com/th/id/ABTFFC8C4BD50BD24A57442916ADF2D52F52A750E4031575E778AF113C0215BA393?qlt=90&dpr=1.25&pid=InlineBlock'
+          imgUrl: 'https://s.cn.bing.net/th?id=ABTF165EBAFDA4844F7093FDC27C2AD6C5D17ED272DE5F3BE7B3B858D8B3ED10F6A&w=608&h=200&c=2&rs=1&dpr=1.25&pid=SANGAM'
         }
       ]
     }
