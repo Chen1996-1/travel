@@ -52,10 +52,8 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~styles/mixins.styl'
-<<<<<<< HEAD
-=======
 .icons >>> .swiper-container
->>>>>>> index-recommend
+.index-recommend
 .icons
   overflow : hidden
   height:0
