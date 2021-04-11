@@ -52,6 +52,7 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~styles/mixins.styl'
+.icons >>> .swiper-container
 .icons
   overflow : hidden
   height:0
