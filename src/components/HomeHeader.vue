@@ -9,7 +9,7 @@
       输入城市/景点/主题
     </div>
     <div class="header-right">
-      城市
+      {{city}}
       <span class="iconfont icon-downselect">&#xe611;</span>
     </div>
   </div>
@@ -18,7 +18,8 @@
 <script>
 export default {
   name: 'HomeHeader',
-  components: {
+  props: {
+    city: String
   }
 }
 </script>
