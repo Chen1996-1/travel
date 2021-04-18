@@ -19,3 +19,20 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## git 问题
+每当使用
+```
+git branch [分支名]
+```
+的时候，需要pull 一下
+
+在新建分支提交代码后，需要回到主分支 
+```
+git checkout main
+
+git merge [新建分支名]
+
+git push
+```
+合并一下
