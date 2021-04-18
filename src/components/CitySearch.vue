@@ -24,5 +24,5 @@ export default {
     padding: 0 .5rem
     text-align: center
     border-radius: .3rem
-    color: #666
+    color: #667
 </style>
