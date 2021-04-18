@@ -8,10 +8,12 @@
       <span class="iconfont icon-search">&#xe608;</span>
       输入城市/景点/主题
     </div>
-    <div class="header-right">
-      {{city}}
-      <span class="iconfont icon-downselect">&#xe611;</span>
-    </div>
+    <router-link to="/city">
+      <div class="header-right">
+        {{city}}
+        <span class="iconfont icon-downselect">&#xe611;</span>
+      </div>
+    </router-link>
   </div>
 </template>
 
@@ -29,8 +31,8 @@ export default {
   .header
     background:$bgColor
     display: flex
-    height: 2.5rem
-    line-height: 2.5rem
+    height: $headerHeight
+    line-height: $headerHeight
 
     .header-left
       margin-left: 1rem
@@ -48,6 +50,7 @@ export default {
       color: #ccc
     .header-right
       text-align: center
+      color: #fff
       .icon-downselect
         font-size: .8rem
         padding-left: .2rem
