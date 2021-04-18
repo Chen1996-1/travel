@@ -6,7 +6,7 @@
       </div>
     </router-link>
     <div class="header-center">
-      城市选择
+      城市选择 
     </div>
   </div>
 </template>
