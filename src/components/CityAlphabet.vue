@@ -1,18 +1,17 @@
 <template>
   <div class="alphabet-list">
     <ul class="list">
-      <li class="item">A</li>
-      <li class="item">A</li>
-      <li class="item">A</li>
-      <li class="item">A</li>
-      <li class="item">A</li>
+      <li class="item" v-for="(item,key) of cities" :key="key">{{key}}</li>
     </ul>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'CityAlphabet'
+  name: 'CityAlphabet',
+  props: {
+    cities: Object
+  }
 }
 </script>
 
@@ -23,12 +22,13 @@ export default {
   flex-direction: column
   justify-content: center
   position: absolute
-  right:0
+  right: 0
   bottom:0
   top: 5rem
   width: 2rem
   .item
     line-height: 1.5rem
-    text-align: right
+    text-align: center
     color: $bgColor
+    font-size: 1rem
 </style>
