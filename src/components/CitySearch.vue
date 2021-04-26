@@ -5,7 +5,7 @@
   </div>
   <div class="search-content" ref="scroll" v-show="keywordIs">
     <ul>
-      <li class="search-item border-bottom" v-for="item of indexList" :key="item.id">{{item.name}}</li>
+      <li class="search-item border-bottom" v-for="item of indexList" :key="item.id" @click="handleClickSelectCity(item.name)">{{item.name}}</li>
       <li v-show="nocity">没找到</li>
     </ul>
   </div>
@@ -25,10 +25,14 @@ export default {
       timer: null
     }
   },
+  methods: {
+    handleClickSelectCity (city) {
+      this.$store.commit('selectCity', city)
+      this.$router.push('/')
+    }
+  },
   watch: {
     keyword () {
-      this.keywordIs = true
-      console.log(this.keywordIs)
       if (this.timer) {
         clearTimeout(this.timer)
       }
@@ -71,8 +75,9 @@ export default {
     }
   },
   mounted () {
-    this.scroll = new Bscroll(this.$refs.scroll)
-    console.log(this.$refs.searchscroll)
+    this.scroll = new Bscroll(this.$refs.scroll, {
+      click: true
+    })
   }
 }
 </script>
