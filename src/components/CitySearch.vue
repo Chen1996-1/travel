@@ -47,7 +47,7 @@ export default {
           })
         }
         this.indexList = result
-      }, 100)
+      }, 10)
     }
   },
   computed: {

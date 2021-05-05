@@ -10,10 +10,10 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {
+    proxyTable: { // 代理设置 获取后端API 数据 设置项
       '/api': {
-        target: 'http://localhost:8080',
-        pathRewrite: {
+        target: 'http://192.168.3.6:8080', // 后端地址和端口设置
+        pathRewrite: { // 路径重新映射
           '^/api': '/static/mock'
         }
       }
