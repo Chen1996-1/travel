@@ -74,10 +74,16 @@ export default {
       return keywordIs
     }
   },
+  updated () {
+    this.scroll.refresh()
+  },
   mounted () {
     this.scroll = new Bscroll(this.$refs.scroll, {
       click: true
     })
+  },
+  activated () {
+    this.keyword = ''
   }
 }
 </script>
