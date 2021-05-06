@@ -9,6 +9,7 @@ import 'styles/border.css'
 import 'styles/iconfont/iconfont.css'
 import 'swiper/dist/css/swiper.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'babel-polyfill' // babel-polyfill 修复部分浏览器不支持promise
 
 Vue.config.productionTip = false
 Vue.use(VueAwesomeSwiper)
